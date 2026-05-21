@@ -15,15 +15,16 @@
             <input type="text" name="artista" required class="campo"><br>
 
             <label class="campo-texto">Nome do álbum</label>
-            <input type="text" name="nome_album" required class="campo"><br>
+            <input type="text" name="nome" required class="campo"><br>
 
             <label class="campo-texto">Ano de lançamento</label>
-            <input type="number" name="ano_lancamento" min="1900" max="2099" step="1" required class="campo"><br>
+            <input type="number" name="ano" min="1" max="2099" step="1" required class="campo"><br>
 
             <label class="campo-texto">Tipo</label>
             <select name="tipo" required class="campo">
                 <option value="">Selecione o tipo</option>
                 <option value="Álbum">Álbum</option>
+                <option value="Single">Single</option>
             </select><br>
 
             <label class="campo-texto">Foto</label>
