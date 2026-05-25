@@ -16,24 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tb_discografia`
---
-
-DROP TABLE IF EXISTS `tb_discografia`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `tb_discografia` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `ano` int(11) NOT NULL,
-  `artista` varchar(250) NOT NULL,
-  `tipo` varchar(100) NOT NULL,
-  `foto` varchar(1000) NOT NULL,
-  `nome` varchar(100) NOT NULL,
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Dumping data for table `tb_discografia`
 --
 
@@ -41,10 +23,6 @@ LOCK TABLES `tb_discografia` WRITE;
 /*!40000 ALTER TABLE `tb_discografia` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tb_discografia` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'db_spotify'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -55,4 +33,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-18 22:25:44
+-- Dump completed on 2026-05-18 22:29:36
