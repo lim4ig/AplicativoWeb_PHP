@@ -12,38 +12,43 @@ include "inc-cabecalho.php";
         <section class="d-flex flex-column align-items-center">
             <h1 class="text-primary-emphasis fs-2 mt-2">Cadastro de Discografia</h1>
             <br>
-            <div class="card p-4">
+            <div class="card p-4 shadow-sm">
                 <form action="discografia-salvar.php" method="post">
-                    <label>Artista</label><br>
-                    <input type="text" name="artista" required>
+                    <div class="mb-3">
+                        <label class="form-label">Artista</label>
+                        <input type="text" name="artista" class="form-control" required>
+                    </div>
 
-                    <br>
+                    <div class="mb-3">
+                        <label class="form-label">Nome do álbum</label>
+                        <input type="text" name="nome" class="form-control" required>
+                    </div>
 
-                    <label>Nome do álbum</label><br>
-                    <input type="text" name="nome" required>
+                    <div class="mb-3">
+                        <label class="form-label">Ano de lançamento</label>
+                        <input type="number" name="ano" class="form-control" required>
+                    </div>
 
-                    <br>
+                    <div class="mb-3">
+                        <label class="form-label">Tipo</label>
+                        <select name="tipo" class="form-select" required>
+                            <option value="album">Álbum</option>
+                            <option value="single">Single</option>
+                        </select>
+                    </div>
 
-                    <label>Ano de lançamento</label><br>
-                    <input type="number" name="ano" required>
+                    <div class="mb-3">
+                        <label class="form-label">Foto</label>
+                        <input type="text" name="foto" class="form-control" required>
+                    </div>
 
-                    <br>
-
-                    <label>Tipo</label><br>
-                    <select name="tipo" required>
-                        <option value="album">Álbum</option>
-                        <option value="single">Single</option>
-                    </select>
-
-                    <br>
-
-                    <label>Foto</label><br>
-                    <input type="text" name="foto" required>
-
-                    <br><br>
-
-                    <button type="submit" class="btn btn-primary">Salvar</button>
-                    <button type="reset" class="btn btn-success">Limpar</button>
+                    <div class="bg-light p-3 rounded">
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-success">Salvar</button>
+                            <button type="reset" class="btn btn-outline-success">Limpar</button>
+                            <a href="discografia-listagem.php" class="btn btn-outline-success">Voltar</a>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>

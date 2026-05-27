@@ -13,7 +13,9 @@ include "inc-cabecalho.php";
 
         <div class="row">
             <div class="col">
-                <a href="discografia-formulario.php" class="btn btn-success">Nova discografia</a>
+                <div class="bg-light p-3 rounded d-inline-block">
+                    <a href="discografia-formulario.php" class="btn btn-success">Nova discografia</a>
+                </div>
             </div>
         </div>
     </main>
