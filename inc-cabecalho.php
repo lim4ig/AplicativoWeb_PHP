@@ -1,4 +1,3 @@
-<!-- Cabeçalho HTML comum usado em várias páginas do site -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
