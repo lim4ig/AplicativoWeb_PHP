@@ -19,14 +19,7 @@ $resultado = mysqli_execute_query($conn, "INSERT INTO tb_discografia(artista, no
 
 echo '<br><br>';
 
-if($resultado){
-    // Mensagem em caso de sucesso.
-    echo "Cadastrado com sucesso!";
-}
-else{
-    // Mensagem em caso de falha.
-    echo "Houve algum problema.";
-}
+return header("Location: discografia-listagem.php");
 
 mysqli_close($conn);
 

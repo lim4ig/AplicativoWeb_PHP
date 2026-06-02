@@ -29,6 +29,8 @@ include "inc-cabecalho.php";
                                 <th>Nome</th>
                                 <th>Ano</th>
                                 <th>Tipo</th>
+                                <th>Excluir</th>
+                                <th>Editar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,11 +52,13 @@ include "inc-cabecalho.php";
                                     echo "<td><a href='discografia-vizualizar.php?id={$linha_resultado['ID']}' class='text-decoration-none'>{$linha_resultado['nome']}</a></td>";
                                     echo "<td> {$linha_resultado['ano']} </td>";
                                     echo "<td> {$linha_resultado['tipo']} </td>";
+                                    echo "<td><a href='discografia-excluir.php?id={$linha_resultado['ID']}' class='btn btn-sm btn-danger' title='Excluir'><i class='bi bi-trash'></i></a></td>";
+                                    echo '<td><a href="discografia-editar.php?id='.$linha_resultado['ID'].'" class="btn btn-sm btn-primary" title="Editar"><i class="bi bi-pencil"></i></a></td>';
                                     echo '</tr>';
                                 }
                             } else {
                                 // Mensagem quando não há registros.
-                                echo '<tr><td colspan="5" class="text-center py-3">Nenhum registro encontrado.</td></tr>';
+                                echo '<tr><td colspan="6" class="text-center py-3">Nenhum registro encontrado.</td></tr>';
                             }
 
                             mysqli_close($conn);
