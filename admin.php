@@ -6,11 +6,11 @@ include "inc-cabecalho.php";
 
 ?>
 <body>
-    <main class="container">
+    <main class="container py-4">
         <!-- Inclui o menu de navegação padrão do site -->
         <?php include "inc-menu.php"; ?>
 
-        <h1 class="text-center text-success mt-5"><i class="bi bi-spotify"></i>
+            <h1 class="text-center text-success mt-4"><i class="bi bi-spotify"></i>
         Spotify</h1>
 
         <div class="row">
